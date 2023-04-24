@@ -1,8 +1,11 @@
+import { StyledLoginPage } from "../styles/components/StyledLoginPage";
+
 const LogInPage = () => {
     return (
-        <div>
-            <h1>Авторизация</h1>
-        </div>
+        <StyledLoginPage.Wrapper>
+            <StyledLoginPage.Form>
+            </StyledLoginPage.Form>
+        </StyledLoginPage.Wrapper>
     )
 }
 
