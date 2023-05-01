@@ -1,10 +1,13 @@
-import { configureStore } from "@reduxjs/toolkit"
-import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux"
+import { configureStore } from "@reduxjs/toolkit";
+import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
+import user from "./slices/userSlice";
 
 export const store = configureStore({
-    reducer: {},
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
-})
+  reducer: {
+    user,
+  },
+  middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(),
+});
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
