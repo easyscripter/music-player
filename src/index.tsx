@@ -3,6 +3,11 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles/index.css';
 
+//@ts-ignore
+window.VK.init({
+  apiId: 51624106,
+})
+
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
 );
